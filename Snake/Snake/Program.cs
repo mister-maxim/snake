@@ -21,7 +21,7 @@ namespace Snake
             pList.Add(p1);
             pList.Add(p2);
             */
-            HorizontalLine line = new HorizontalLine();
+            HorizontalLine line = new HorizontalLine(3,15,7,'x');
             line.Draw();
 
             Console.ReadLine();
