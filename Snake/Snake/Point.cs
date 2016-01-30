@@ -49,5 +49,10 @@ namespace Snake
             Console.Write(sym);
         }
 
+        public void Clear()
+        {
+            Draw(x, y, ' ');
+        }
+
     }
 }
