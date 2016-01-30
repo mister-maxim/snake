@@ -18,10 +18,23 @@ namespace Snake
             y = _y;
             sym = _sym;
         }
-
-        public Point()
+        
+        public Point(Point p):this(p.x, p.y, p.sym)
         {
+           
+        }/*
+        public Point(Point p)
+        {
+            x = p.x;
+            y = p.y;
+            sym = p.sym;
+        }*/
 
+        public void Move(int length, Direction direction){
+            if(direction == Direction.RIGHT)x += length;
+            if(direction == Direction.LEFT)x -= length;
+            if(direction == Direction.UP)y -= length;
+            if(direction == Direction.DOWN)y += length;
         }
 
         public void Draw()
