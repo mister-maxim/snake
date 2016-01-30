@@ -39,8 +39,30 @@ namespace Snake
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
 
-            for (int i = 0; i < 10; i++)
+            while(true)
             {
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    if (key.Key == ConsoleKey.LeftArrow)
+                    {
+                        snake.direction = Direction.LEFT;
+                    } else if (key.Key == ConsoleKey.LeftArrow)
+                    {
+                        snake.direction = Direction.RIGHT;
+                    } else if (key.Key == ConsoleKey.RightArrow)
+                    {
+                        snake.direction = Direction.UP;
+                    } else if (key.Key == ConsoleKey.UpArrow)
+                    {
+                        snake.direction = Direction.DOWN;
+                    } else if (key.Key == ConsoleKey.DownArrow)
+                    {
+                        snake.direction = Direction.LEFT;
+                    };
+
+
+                }
                 snake.Move();
                 Thread.Sleep(300);
             };
