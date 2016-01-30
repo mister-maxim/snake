@@ -22,6 +22,7 @@ namespace Snake
             pList.Add(p1);
             pList.Add(p2);
             */
+            //отрисовка рамочки
             HorizontalLine line1 = new HorizontalLine(0,78,0,'+');
             VerticalLine line2 = new VerticalLine(0, 24, 78, '+');
             HorizontalLine line3 = new HorizontalLine(0, 78, 24, '+');
@@ -31,6 +32,7 @@ namespace Snake
             line3.Draw();
             line4.Draw();
 
+            //отрисовка точек
             Point p = new Point(4, 5, '*');
             p.Draw();
             Console.ReadLine();
