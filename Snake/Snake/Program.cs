@@ -10,7 +10,7 @@ namespace Snake
     {
         static void Main(string[] args)
         {
- 
+            /*
             Point p1 = new Point(1,3,'x');
             p1.Draw();
 
@@ -20,6 +20,9 @@ namespace Snake
             List<Point> pList = new List<Point>();
             pList.Add(p1);
             pList.Add(p2);
+            */
+            HorizontalLine line = new HorizontalLine();
+            line.Draw();
 
             Console.ReadLine();
         }
