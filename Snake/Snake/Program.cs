@@ -13,6 +13,37 @@ namespace Snake
         {
             Console.SetBufferSize(80, 25);
             /*
+            VerticalLine v1 = new VerticalLine(0, 10, 5, '%');
+            //Draw(v1);
+
+            Point p = new Point(4, 5, '*');
+            Figure fSnake = new Snake(p, 4, Direction.RIGHT);
+            //Draw(fSnake);
+            Snake snake = (Snake)fSnake;
+
+            HorizontalLine h1 = new HorizontalLine(0, 5, 6, '&');
+            List<Figure> figures = new List<Figure>();
+            figures.Add(fSnake);
+            figures.Add(v1);
+            figures.Add(h1);
+
+            foreach(Figure f in figures){
+                f.Draw();
+            };
+            */
+
+            
+
+
+
+
+
+
+
+
+
+
+            /*
             Point p1 = new Point(1,3,'x');
             p1.Draw();
 
@@ -24,6 +55,7 @@ namespace Snake
             pList.Add(p2);
             */
             //отрисовка рамочки
+            
             HorizontalLine line1 = new HorizontalLine(0,78,0,'+');
             VerticalLine line2 = new VerticalLine(0, 24, 78, '+');
             HorizontalLine line3 = new HorizontalLine(0, 78, 24, '+');
@@ -58,8 +90,13 @@ namespace Snake
                 snake.Move();
                 Thread.Sleep(100);
             };
-            
+            /**/
             //Console.ReadLine();
+        }
+
+        public static void Draw(Figure figure)
+        {
+            figure.Draw();
         }
 
     }
